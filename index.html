@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="opciones"><br><br><br>
+        <label for="opciones" class="datos">Selecciona una Operacion</label>
+        <select id="opcion" class="caja-2">
+        <option value="opcion0"></option>
+        <option value="opcion1">a. 3/2+4/3</option>
+        <option value="opcion2">b. 1/(x-5)-3*x*y/4 </option>
+        <option value="opcion3">c. a*a/(b-c)+(d-e)/(f-g*h/j)  </option>
+        <option value="opcion4">d. m/n+p</option>
+        <option value="opcion5">e. (m+n/p)/(q-r/s) </option>
+        <option value="opcion6">f. (3*a+b)/(c-(d+5*e)/(f+g/(2*h)))</option>
+        </select>
+        <button class="boton" onclick="mostrarSeleccion()">Continuar</button>
+    </div>
+    <div class="container">
+        <div class="opciones-1" id="xd">
+
+                <div id="cajas-b" class="conten"><br>
+                    <input type="number" id="x" class="caja-1" placeholder="Valor de X"> <br><br>
+                    <input type="number" id="y" class="caja-1" placeholder="Valor de Y"> <br>
+                </div>
+
+
+                <div id="cajas-c" class="conten"><br>
+                    
+                    <input type="number" id="a-1" class="caja-1" placeholder="Valor de a"> <br><br>
+                    <input type="number" id="b-1" class="caja-1" placeholder="Valor de b"> <br><br>
+                    <input type="number" id="c-1" class="caja-1" placeholder="Valor de c"> <br><br>
+                    <input type="number" id="d-1" class="caja-1" placeholder="Valor de d"> <br><br>
+                    <input type="number" id="e-1" class="caja-1" placeholder="Valor de e"> <br><br>
+                    <input type="number" id="f-1" class="caja-1" placeholder="Valor de f"> <br><br>
+                    <input type="number" id="g-1" class="caja-1" placeholder="Valor de g"> <br><br>
+                    <input type="number" id="h-1" class="caja-1" placeholder="Valor de h"> <br><br>
+                    <input type="number" id="j-1" class="caja-1" placeholder="Valor de j"> <br>
+                </div>
+
+                <div id="cajas-d" class="conten"><br>
+                    <input type="number" id="m" class="caja-1" placeholder="Valor de m"> <br><br>
+                    <input type="number" id="n" class="caja-1" placeholder="Valor de n"> <br><br>
+                    <input type="number" id="p" class="caja-1" placeholder="Valor de p"> <br>
+                </div>
+
+                <div id="cajas-e" class="conten"><br>
+                    <input type="number" id="n-1" class="caja-1" placeholder="Valor de n"> <br><br>
+                    <input type="number" id="m-1" class="caja-1" placeholder="Valor de m"> <br><br>
+                    <input type="number" id="p-1" class="caja-1" placeholder="Valor de p"> <br><br>
+                    <input type="number" id="q-1" class="caja-1" placeholder="Valor de q"> <br><br>
+                    <input type="number" id="r-1" class="caja-1" placeholder="Valor de r"> <br><br>
+                    <input type="number" id="s-1" class="caja-1" placeholder="Valor de s"> <br>
+                </div>
+
+                <div id="cajas-f" class="conten"><br>
+                    <input type="number" id="a-2" class="caja-1" placeholder="Valor de a"> <br><br>
+                    <input type="number" id="b-2" class="caja-1" placeholder="Valor de b"> <br><br>
+                    <input type="number" id="c-2" class="caja-1" placeholder="Valor de c"> <br><br>
+                    <input type="number" id="d-2" class="caja-1" placeholder="Valor de d"> <br><br>
+                    <input type="number" id="e-2" class="caja-1" placeholder="Valor de e"> <br><br>
+                    <input type="number" id="f-2" class="caja-1" placeholder="Valor de f"> <br><br>
+                    <input type="number" id="g-2" class="caja-1" placeholder="Valor de g"> <br><br>
+                    <input type="number" id="h-2" class="caja-1" placeholder="Valor de h"> <br>
+                </div>
+
+        </div>   
+
+        <div class="respuesta"><br><br>
+            <button class="boton" onclick="mostrarResultado()">Calcular</button><br><br>
+            <button class="boton" onclick="clear()">Limpiar</button><br><br>
+            <h1 id="resp"></h1>
+        </div>
+        
+    </div>
+</body>
+</html>
